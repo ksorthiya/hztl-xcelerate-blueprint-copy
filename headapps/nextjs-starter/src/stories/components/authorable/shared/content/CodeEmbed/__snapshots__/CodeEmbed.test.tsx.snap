@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CodeEmbed /> should match snapshot 1`] = `
+<div>
+  <div
+    data-component="authorable/shared/content/codeEmbed"
+    data-testid="component-code-embed-undefined"
+  >
+    <div
+      class="relative flex flex-col justify-center items-start self-stretch gap-layout-variety-gutter before:absolute before:inset-y-0 before:left-[calc(-50vw+50%)] before:right-[calc(-50vw+50%)] before:bg-component-section-color-bg before:-z-10 text-left pt-component-section-padding-y pb-component-section-padding-y px-component-section-padding-x"
+      data-component="generic-wrappers/section-wrapper"
+    >
+      <div
+        class="flex flex-col w-full h-auto gap-0"
+      >
+        <div
+          data-testid="html-code"
+        >
+          <p
+            id="custom-paragraph"
+          >
+            This paragraph should be blue.
+          </p>
+          
+
+          <p>
+            This paragraph should be styled as normal.
+          </p>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

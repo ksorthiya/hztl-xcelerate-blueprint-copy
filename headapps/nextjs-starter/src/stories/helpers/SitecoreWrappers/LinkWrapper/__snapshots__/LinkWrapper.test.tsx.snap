@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders CTA link correctly 1`] = `
+<DocumentFragment>
+  <a
+    class=" group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row-reverse overflow-hidden rounded-border-radius-variety-button items-center justify-center text-center transition-colors duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 border-component-button-on-bg-filled-border bg-component-button-on-bg-filled-bg text-component-button-on-bg-filled-text hover:border-component-button-on-bg-filled-border-hover hover:bg-component-button-on-bg-filled-bg-hover hover:text-component-button-on-bg-filled-text-hover focus-visible:ring-componentTheme---bg-interaction-focus active:border-component-button-on-bg-filled-border-pressed active:bg-component-button-on-bg-filled-bg-pressed active:text-component-button-on-bg-filled-text-pressed disabled:border-component-button-on-bg-filled-border-disabled disabled:bg-component-button-on-bg-filled-bg-disabled disabled:text-component-button-on-bg-filled-text-disabled group"
+    data-component="helpers/sitecorewrappers/linkwrapper"
+    data-cta-color="onBg"
+    data-cta-icon-alignment="left"
+    data-cta-size="xl"
+    data-cta-variant="fill"
+    data-cta-visibility="visible"
+    href="https://www.example.com/cta"
+    target="_self"
+  >
+    <span>
+      CTA Link
+    </span>
+    <svg
+      class="!h-4 !w-4 text-component-button-on-bg-filled-icon group-hover:text-component-button-on-bg-filled-icon-hover group-active:text-component-button-on-bg-filled-icon-pressed disabled:text-component-button-on-bg-filled-icon-disabled"
+      data-icon="arrow-right"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M5.5,23.3c-.9-.9-.9-2.5,0-3.4l7.9-7.9-7.9-7.9c-.9-.9-.9-2.5,0-3.4.9-.9,2.5-.9,3.4,0l9.6,9.6c.9.9.9,2.5,0,3.4l-9.6,9.6c-.9.9-2.5.9-3.4,0Z"
+        fill="currentColor"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span
+      class="sr-only"
+    >
+      Only screen readers can access this text
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`renders anchor link correctly 1`] = `
+<DocumentFragment>
+  <a
+    class=" group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+    data-component="helpers/sitecorewrappers/linkwrapper"
+    href="#modal-sample"
+  >
+    <span>
+      An anchor link that opens a modal.
+    </span>
+    <span
+      class="sr-only"
+    >
+      Only screen readers can access this text
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`renders custom target link correctly 1`] = `
+<DocumentFragment>
+  <a
+    class=" group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+    data-component="helpers/sitecorewrappers/linkwrapper"
+    data-cta-color="onBg"
+    data-cta-icon-alignment="right"
+    data-cta-size="xl"
+    data-cta-variant="link"
+    data-cta-visibility="visible"
+    href="https://www.example.com/"
+  >
+    <span>
+      Link with custom target that should not have target attribute
+    </span>
+    <span
+      class="sr-only"
+    >
+      Only screen readers can access this text
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`renders default link correctly 1`] = `
+<DocumentFragment>
+  <a
+    class=" group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+    data-component="helpers/sitecorewrappers/linkwrapper"
+    data-cta-color="onBg"
+    data-cta-icon-alignment="right"
+    data-cta-size="xl"
+    data-cta-variant="link"
+    data-cta-visibility="visible"
+    href="https://www.example.com/"
+    target="_self"
+  >
+    <span>
+      Link with screen reader text that opens in the current tab
+    </span>
+    <span
+      class="sr-only"
+    >
+      Only screen readers can access this text
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`renders email link correctly 1`] = `
+<DocumentFragment>
+  <a
+    class=" group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+    data-component="helpers/sitecorewrappers/linkwrapper"
+    href="mailto:example@example.com"
+  >
+    <span>
+      example@example.com
+    </span>
+    <span
+      class="sr-only"
+    >
+      Only screen readers can access this text
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`renders external link correctly 1`] = `
+<DocumentFragment>
+  <a
+    class=" group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+    data-component="helpers/sitecorewrappers/linkwrapper"
+    data-cta-color="onBg"
+    data-cta-icon-alignment="right"
+    data-cta-size="xl"
+    data-cta-variant="link"
+    data-cta-visibility="visible"
+    href="https://www.example.com/"
+    target="_blank"
+  >
+    <span>
+      Link with screen reader text that opens in a new tab
+    </span>
+    <svg
+      class="!h-6 !w-6 text-component-button-on-bg-link-text group-hover:text-component-button-on-bg-link-text-hover group-active:text-component-button-on-bg-link-text-hover align-middle inline-flex ml-2 flex-shrink-0 -mt-px"
+      data-icon="new-tab"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M9 6C9 5.44772 9.44772 5 10 5H18C18.5523 5 19 5.44772 19 6V14C19 14.5523 18.5523 15 18 15C17.4477 15 17 14.5523 17 14V8.41421L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L15.5858 7H10C9.44772 7 9 6.55228 9 6Z"
+        fill="currentColor"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span
+      class="sr-only"
+    >
+      Only screen readers can access this text (Opens in a new tab)
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`renders link with children correctly 1`] = `
+<DocumentFragment>
+  <a
+    class=" group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+    data-component="helpers/sitecorewrappers/linkwrapper"
+    data-cta-color="onBg"
+    data-cta-icon-alignment="right"
+    data-cta-size="xl"
+    data-cta-variant="link"
+    data-cta-visibility="visible"
+    href="https://www.example.com/"
+    target="_self"
+  >
+    Image
+    <span
+      class="sr-only"
+    >
+      Only screen readers can access this text
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`renders link with title correctly 1`] = `
+<DocumentFragment>
+  <a
+    class=" group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+    data-component="helpers/sitecorewrappers/linkwrapper"
+    href="#modal-sample"
+    title="An anchor link that opens a modal."
+  >
+    <span>
+      An anchor link that opens a modal.
+    </span>
+    <span
+      class="sr-only"
+    >
+      Only screen readers can access this text
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`renders no content correctly 1`] = `<DocumentFragment />`;

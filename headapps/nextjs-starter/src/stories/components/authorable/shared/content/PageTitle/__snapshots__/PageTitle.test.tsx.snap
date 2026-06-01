@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageTitle /> should match snapshot 1`] = `
+<div>
+  <section
+    class="container max-w-none relative w-full flex items-center px-layout-variety-margin-x min-h-height-min-height-page-title-min-height cta1"
+    data-component="authorable/shared/content/pageTitle"
+    data-testid="component-page-title-undefined"
+  >
+    <div
+      class="BrandsBrandX ThemesWhite brand-root"
+    >
+      <div
+        class="absolute inset-0 z-0 left-[calc(-50vw+50%)] right-[calc(-50vw+50%)] bg-component-section-color-bg"
+        data-testid="background"
+      />
+      <div
+        class="relative flex flex-col gap-spacing-general-copy-margin-bottom lg:max-w-typography-copy-max-Width justify-start text-left"
+      >
+        <div
+          class="flex flex-col gap-spacing-general-title-margin-bottom text-component-section-color-title"
+        >
+          <h1
+            class="font-typography-header-font-family font-bold leading-normal text-component-section-color-title"
+            data-component="helpers/fieldwrappers/plaintextwrapper"
+            data-testid="headline"
+          >
+            This is a Title
+          </h1>
+          <div
+            class="rte font-typography-body-font-family font-normal leading-normal text-typography-body-large-font-size"
+            data-component="helpers/fieldwrappers/richtextwrapper"
+            data-testid="description"
+          >
+            This is Description.
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row pt-spacing-general-buttons-margin-top justify-start"
+        >
+          <a
+            class="px-8 group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row overflow-hidden rounded-border-radius-variety-button items-center justify-center text-center transition-colors duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 border-component-button-on-bg-filled-border bg-component-button-on-bg-filled-bg text-component-button-on-bg-filled-text hover:border-component-button-on-bg-filled-border-hover hover:bg-component-button-on-bg-filled-bg-hover hover:text-component-button-on-bg-filled-text-hover focus-visible:ring-componentTheme---bg-interaction-focus active:border-component-button-on-bg-filled-border-pressed active:bg-component-button-on-bg-filled-bg-pressed active:text-component-button-on-bg-filled-text-pressed disabled:border-component-button-on-bg-filled-border-disabled disabled:bg-component-button-on-bg-filled-bg-disabled disabled:text-component-button-on-bg-filled-text-disabled group"
+            data-component="helpers/sitecorewrappers/linkwrapper"
+            data-cta-color="onBg"
+            data-cta-icon-alignment="right"
+            data-cta-size="xl"
+            data-cta-variant="fill"
+            data-cta-visibility="visible"
+            data-testid="cta"
+            href="https://hztl-blueprint-brandx-dev.vercel.app/"
+            target="_blank"
+          >
+            <span>
+              External Link
+            </span>
+            <svg
+              class="!h-4 !w-4 text-component-button-on-bg-filled-icon group-hover:text-component-button-on-bg-filled-icon-hover group-active:text-component-button-on-bg-filled-icon-pressed disabled:text-component-button-on-bg-filled-icon-disabled"
+              data-icon="arrow-right"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M5.5,23.3c-.9-.9-.9-2.5,0-3.4l7.9-7.9-7.9-7.9c-.9-.9-.9-2.5,0-3.4.9-.9,2.5-.9,3.4,0l9.6,9.6c.9.9.9,2.5,0,3.4l-9.6,9.6c-.9.9-2.5.9-3.4,0Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

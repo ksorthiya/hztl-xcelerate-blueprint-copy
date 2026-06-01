@@ -1,0 +1,202 @@
+{
+  "layout-variety": {
+    "margin-x": {
+      "$type": "number",
+      "$value": "{spacing.layout.margin-x}",
+      "$description": "",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "margin-y": {
+      "$type": "number",
+      "$value": "{spacing.layout.margin-y}",
+      "$description": "",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "gutter": {
+      "$type": "number",
+      "$value": "{spacing.layout.gutter}",
+      "$description": "",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "columns": {
+      "$type": "number",
+      "$value": "{spacing.layout.columns}",
+      "$description": "",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    }
+  },
+  "columns-variety": {
+    "full-max-width": {
+      "$type": "number",
+      "$value": "{spacing.columns.full-max-width}",
+      "$description": "Use for maximum width of the full container.",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "full-min-width": {
+      "$type": "number",
+      "$value": "{spacing.columns.full-min-width}",
+      "$description": "Use for minimum width of the full container.",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "half-max-width": {
+      "$type": "number",
+      "$value": "{spacing.columns.half-max-width}",
+      "$description": "Use for maximum width of the half container.",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "half-min-width": {
+      "$type": "number",
+      "$value": "{spacing.columns.half-min-width}",
+      "$description": "Use for minimum width of the half container.",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "one-third-max-width": {
+      "$type": "number",
+      "$value": "{spacing.columns.one-third-max-width}",
+      "$description": "Use for maximum width of the oneThird container.",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "one-third-min-width": {
+      "$type": "number",
+      "$value": "{spacing.columns.one-third-min-width}",
+      "$description": "Use for minimum width of the oneThird container.",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "two-third-max-width": {
+      "$type": "number",
+      "$value": "{spacing.columns.two-third-max-width}",
+      "$description": "Use for maximum width of the twoThird container.",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "two-third-min-width": {
+      "$type": "number",
+      "$value": "{spacing.columns.two-third-min-width}",
+      "$description": "Use for minimum width of the twoThird container.",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "one-fourth-max-width": {
+      "$type": "number",
+      "$value": "{spacing.columns.one-fourth-max-width}",
+      "$description": "Use for maximum width of the oneFourth container.",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "one-fourth-min-width": {
+      "$type": "number",
+      "$value": "{spacing.columns.one-fourth-min-width}",
+      "$description": "Use for minimum width of the oneFourth container.",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    }
+  }
+}

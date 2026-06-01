@@ -1,0 +1,246 @@
+{
+  "border-radius-variety": {
+    "none": {
+      "$type": "number",
+      "$value": "{border.radius.none}",
+      "$description": "radius none",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "base": {
+      "$type": "number",
+      "$value": "{border.radius.container}",
+      "$description": "radius none",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "button": {
+      "$type": "number",
+      "$value": "{border.radius.button}",
+      "$description": "Controls radius of BUTTONS, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "pagination-button": {
+      "$type": "number",
+      "$value": "{border.radius.pagination-button}",
+      "$description": "Controls radius of BUTTONS, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "container": {
+      "$type": "number",
+      "$value": "{border.radius.container}",
+      "$description": "Controls radius of CONTAINER, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "container-l2": {
+      "$type": "number",
+      "$value": "{border.radius.container-l2}",
+      "$description": "Controls radius of CONTAINER L2, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "wrapper-container": {
+      "$type": "number",
+      "$value": "{border.radius.wrapper-container}",
+      "$description": "Controls radius of CONTAINER, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "accordion": {
+      "$type": "number",
+      "$value": "{border.radius.accordion}",
+      "$description": "Controls radius of CARD, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "card": {
+      "$type": "number",
+      "$value": "{border.radius.card}",
+      "$description": "Controls radius of CARD, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "stat": {
+      "$type": "number",
+      "$value": "{border.radius.stat}",
+      "$description": "Controls radius of CARD, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "image": {
+      "$type": "number",
+      "$value": "{border.radius.image}",
+      "$description": "Controls radius of IMAGE, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "icon": {
+      "$type": "number",
+      "$value": "{border.radius.icon}",
+      "$description": "Controls radius of IMAGE, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "label": {
+      "$type": "number",
+      "$value": "{border.radius.label}",
+      "$description": "Controls radius of LABEL, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "modal": {
+      "$type": "number",
+      "$value": "{border.radius.modal}",
+      "$description": "Controls radius of LABEL, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "tag": {
+      "$type": "number",
+      "$value": "{border.radius.tag}",
+      "$description": "Controls radius of TAG, by brand",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "text-input": {
+      "$type": "number",
+      "$value": "{border.radius.text-input}",
+      "$description": "",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--p-border-width-input)"
+          }
+        }
+      }
+    },
+    "text-area": {
+      "$type": "number",
+      "$value": "{border.radius.text-area}",
+      "$description": "",
+      "$extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "CORNER_RADIUS"
+          ],
+          "codeSyntax": {
+            "WEB": "var(--p-border-width-input)"
+          }
+        }
+      }
+    }
+  }
+}

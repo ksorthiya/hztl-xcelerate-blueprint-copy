@@ -1,0 +1,719 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should match snapshot 1`] = `
+<div>
+  <div
+    class="w-full bg-component-footer-bg border-t border-t-color-component-footer-top-border"
+    data-component="authorable/shared/site-structure/footer/footer"
+    data-testid="component-footer-undefined"
+  >
+    <div
+      class="flex flex-col gap-spacing-spacing-64 lg:flex lg:flex-row lg:gap-spacing-spacing-64 lg:pt-spacing-spacing-64 py-spacing-spacing-48 lg:col-span-4 m-auto max-w-columns-variety-full-max-width min-w-screen-dimensions-min-width px-spacing-layout-margin-x py-spacing-spacing-24"
+    >
+      <div
+        class="lg:w-1/4 flex flex-col gap-6"
+      >
+        <a
+          class=" group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+          data-component="helpers/sitecorewrappers/linkwrapper"
+          data-cta-color="onBg"
+          data-cta-icon-alignment="right"
+          data-cta-size="xl"
+          data-cta-variant="link"
+          data-cta-visibility="visible"
+          data-testid="footer-logo"
+          href="/"
+          target=""
+        >
+          <img
+            alt="Horizontal Digital"
+            data-component="helpers/fieldwrappers/imagewrapper"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="auto"
+            height="45"
+            loading="lazy"
+            src="./assets/hztl_logo.png"
+            style="color: transparent;"
+            width="60"
+          />
+        </a>
+        <div>
+          <p
+            class="rte font-typography-body-small-font-weight leading-typography-line-height-body-medium text-component-footer-description-text"
+            data-component="helpers/fieldwrappers/richtextwrapper"
+            data-testid="footer-description"
+          >
+            Design amazing connected experiences that create more happy in the world.
+            <br />
+          </p>
+        </div>
+      </div>
+      <div
+        class="gap-spacing-spacing-32 lg:flex flex-1 lg:flex-nowrap flex-wrap items-start self-stretch lg:basis-1/2 lg:justify-end grid grid-cols-2 lg:grid-cols-none"
+      >
+        <ul
+          class="w-full"
+        >
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <h3
+              class="font-semibold text-component-footer-category-label leading-typography-line-height-body-small"
+              data-component="helpers/fieldwrappers/plaintextwrapper"
+              data-testid="footer-nav-header"
+            >
+              Resources
+            </h3>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Link1
+              </span>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target="_blank"
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Financial Calculators
+              </span>
+              <svg
+                class="!h-6 !w-6 text-component-button-on-bg-link-text group-hover:text-component-button-on-bg-link-text-hover group-active:text-component-button-on-bg-link-text-hover align-middle inline-flex ml-2 flex-shrink-0 -mt-px"
+                data-icon="new-tab"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M9 6C9 5.44772 9.44772 5 10 5H18C18.5523 5 19 5.44772 19 6V14C19 14.5523 18.5523 15 18 15C17.4477 15 17 14.5523 17 14V8.41421L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L15.5858 7H10C9.44772 7 9 6.55228 9 6Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Link3
+              </span>
+            </a>
+          </li>
+        </ul>
+        <ul
+          class="w-full"
+        >
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <h3
+              class="font-semibold text-component-footer-category-label leading-typography-line-height-body-small"
+              data-component="helpers/fieldwrappers/plaintextwrapper"
+              data-testid="footer-nav-header"
+            >
+              FooterColumn2
+            </h3>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Insights & Articles
+              </span>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Frequently Asked Questions
+              </span>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Link3
+              </span>
+            </a>
+          </li>
+        </ul>
+        <ul
+          class="w-full"
+        >
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <h3
+              class="font-semibold text-component-footer-category-label leading-typography-line-height-body-small"
+              data-component="helpers/fieldwrappers/plaintextwrapper"
+              data-testid="footer-nav-header"
+            >
+              Company
+            </h3>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Our Story
+              </span>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Join Our Team
+              </span>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Get in Touch
+              </span>
+            </a>
+          </li>
+        </ul>
+        <ul
+          class="w-full"
+        >
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <h3
+              class="font-semibold text-component-footer-category-label leading-typography-line-height-body-small"
+              data-component="helpers/fieldwrappers/plaintextwrapper"
+              data-testid="footer-nav-header"
+            >
+              Legal
+            </h3>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Link1
+              </span>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Privacy Policy
+              </span>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Terms of Service
+              </span>
+            </a>
+          </li>
+        </ul>
+        <ul
+          class="w-full"
+        >
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <h3
+              class="font-semibold text-component-footer-category-label leading-typography-line-height-body-small"
+              data-component="helpers/fieldwrappers/plaintextwrapper"
+              data-testid="footer-nav-header"
+            >
+              Social
+            </h3>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+              target=""
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                LinkedIn
+              </span>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Twitter
+              </span>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Cookies
+              </span>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                License
+              </span>
+            </a>
+          </li>
+          <li
+            class="first:pb-1 first:pt-0 group pt-3"
+          >
+            <a
+              class="flex items-center !text-component-footer-link-link-text hover:!text-component-footer-link-link-text-hover hover:underline [&_svg]:!text-component-footer-link-link-text hover:[&_svg]:!text-component-footer-link-link-text-hover group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="footer-nav-link"
+              href="/"
+            >
+              <span
+                class="font-typography-button-large-font-weight leading-typography-button-large-line-height tracking-typography-button-large-letter-spacing text-left text-component-footer-link-link-text group-hover:text-component-footer-link-link-text-hover flex gap-spacing-spacing-8 items-center"
+              >
+                Settings
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="w-full bg-component-footer-utility-bar-utility-bg"
+    >
+      <div
+        class="m-auto lg:items-center flex flex-col-reverse lg:flex-row gap-spacing-spacing-32 justify-between max-w-columns-variety-full-max-width min-w-screen-dimensions-min-width px-spacing-layout-margin-x py-spacing-spacing-40"
+      >
+        <p
+          class="rte font-typography-body-small-font-weight text-component-footer-legal-text"
+          data-component="helpers/fieldwrappers/richtextwrapper"
+          data-testid="copyright-info"
+        >
+          Need a digital marketing solution? Visit our partner company 
+          <strong>
+            <a
+              href="https://www.horizontaldigital.com"
+              target="_blank"
+            >
+              Horizontal Digital
+
+              <span
+                class="svg-icon inline-flex align-middle -ml-3 h-6 w-6"
+              >
+                
+    
+                <svg
+                  aria-hidden="true"
+                  class="inline ml-2 -mt-1 h-em w-em"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+      
+                  <path
+                    cliprule="evenodd"
+                    d="M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.03 20.03a.75.75 0 01-1.06-1.06L17.69 5.25H8.25a.75.75 0 010-1.5z"
+                    fillrule="evenodd"
+                  />
+                  
+    
+                </svg>
+                
+  
+              </span>
+              <span
+                class="sr-only"
+              >
+                 (Opens in a new tab)
+              </span>
+               
+              <span
+                class="svg-icon inline-flex align-middle -ml-3 h-6 w-6"
+              >
+                
+    
+                <svg
+                  aria-hidden="true"
+                  class="inline ml-2 -mt-1 h-em w-em"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+      
+                  <path
+                    cliprule="evenodd"
+                    d="M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.03 20.03a.75.75 0 01-1.06-1.06L17.69 5.25H8.25a.75.75 0 010-1.5z"
+                    fillrule="evenodd"
+                  />
+                  
+    
+                </svg>
+                
+  
+              </span>
+            </a>
+          </strong>
+          .
+        </p>
+        <ul
+          class="flex gap-6 items-center"
+          data-testid="social-media"
+        >
+          <li>
+            <a
+              class="!w-6 block group group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="social-media-link"
+              href="https://www.horizontaldigital.com/"
+              target="_blank"
+            >
+              <div
+                aria-label="Facebook"
+                role="img"
+              >
+                <svg
+                  class="w-6 h-6 fill-component-footer-utility-bar-social-icon group-hover:fill-component-footer-utility-bar-social-icon-hover"
+                />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="!w-6 block group group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="social-media-link"
+              href="https://www.instagram.com/hztldigital/"
+              target="_blank"
+            >
+              <div
+                aria-label="Instagram"
+                role="img"
+              >
+                <svg
+                  class="w-6 h-6 fill-component-footer-utility-bar-social-icon group-hover:fill-component-footer-utility-bar-social-icon-hover"
+                />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="!w-6 block group group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="social-media-link"
+              href="https://www.horizontaldigital.com/"
+              target="_blank"
+            >
+              <div
+                aria-label="Pinterest"
+                role="img"
+              >
+                <svg
+                  class="w-6 h-6 fill-component-footer-utility-bar-social-icon group-hover:fill-component-footer-utility-bar-social-icon-hover"
+                />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="!w-6 block group group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="social-media-link"
+              href="https://www.horizontaldigital.com/"
+              target="_blank"
+            >
+              <div
+                aria-label="YouTube"
+                role="img"
+              >
+                <svg
+                  class="w-6 h-6 fill-component-footer-utility-bar-social-icon group-hover:fill-component-footer-utility-bar-social-icon-hover"
+                />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="!w-6 block group group inline-flex gap-spacing-spacing-8 py-component-button-xl-padding-y px-component-button-xl-padding-x font-typography-button-xlarge-font-weight leading-[var(--typography-button-xlarge-line-height)] tracking-[var(--typography-button-xlarge-letter-spacing)] flex-row border-0 h-fit w-fit items-center focus-visible:underline focus-visible:outline-none focus-visible:rounded-border-radius-variety-button focus-visible:ring-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white/75 bg-transparent text-component-button-on-bg-link-text hover:text-component-button-on-bg-link-text-hover hover:border-component-button-on-bg-link-border-hover focus-visible:ring-componentTheme---bg-interaction-focus active:text-component-button-on-bg-link-text-hover disabled:opacity-40 !p-spacing-spacing-2 group"
+              data-component="helpers/sitecorewrappers/linkwrapper"
+              data-cta-color="onBg"
+              data-cta-icon-alignment="right"
+              data-cta-size="xl"
+              data-cta-variant="link"
+              data-cta-visibility="visible"
+              data-testid="social-media-link"
+              href="https://www.horizontaldigital.com/"
+              target="_blank"
+            >
+              <div
+                aria-label="TikTok"
+                role="img"
+              >
+                <svg
+                  class="w-6 h-6 fill-component-footer-utility-bar-social-icon group-hover:fill-component-footer-utility-bar-social-icon-hover"
+                />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;

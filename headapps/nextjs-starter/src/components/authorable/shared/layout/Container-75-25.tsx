@@ -1,0 +1,51 @@
+// Global
+import { tv } from 'tailwind-variants';
+import { JSX } from 'react';
+// Local
+import { PlaceholderWrapper } from 'helpers/SitecoreWrappers/PlaceholderWrapper/PlaceholderWrapper';
+import { SectionWrapper } from 'helpers/GenericWrappers/SectionWrapper/SectionWrapper';
+import { ComponentProps } from 'lib/component-props';
+import { getTestProps } from 'lib/testing/utils';
+
+export const Default = (props: ComponentProps): JSX.Element => {
+  const phKeySmall = `custom-container-small-${props?.params?.DynamicPlaceholderId || 'container-75-25'}`;
+  const phKeyMedium = `custom-container-medium-${props?.params?.DynamicPlaceholderId || 'container-75-25'}`;
+
+  const { container, baseColumn, leftColumn, rightColumn } = TAILWIND_VARIANTS();
+
+  return (
+    <SectionWrapper>
+      <div
+        className={container()}
+        {...getTestProps(`component-container-25-75-${props?.rendering?.uid}`)}
+      >
+        {/* Left Column Container */}
+        <div className={`${baseColumn()} ${leftColumn()}`}>
+          <PlaceholderWrapper
+            name={phKeyMedium}
+            rendering={props?.rendering}
+            {...getTestProps(`ph-left`)}
+          />
+        </div>
+
+        {/* Right Column Container */}
+        <div className={`${baseColumn()} ${rightColumn()}`}>
+          <PlaceholderWrapper
+            name={phKeySmall}
+            rendering={props?.rendering}
+            {...getTestProps(`ph-right`)}
+          />
+        </div>
+      </div>
+    </SectionWrapper>
+  );
+};
+
+const TAILWIND_VARIANTS = tv({
+  slots: {
+    container: ['w-full', 'flex', 'flex-col', 'md:flex-row', 'gap-spacing-spacing-40'],
+    baseColumn: ['w-full', 'grid', 'grid-cols-1', 'md:gap-component-section-container-padding-y'],
+    leftColumn: ['md:w-3/4'],
+    rightColumn: ['md:w-1/4'],
+  },
+});

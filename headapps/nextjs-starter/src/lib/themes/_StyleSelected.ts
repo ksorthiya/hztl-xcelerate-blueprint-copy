@@ -1,0 +1,20 @@
+/* prettier-ignore */
+export const StyleSelected = {
+  'border-radius-variety-accordion': 'var(--border-radius-accordion)',
+  'border-radius-variety-base': 'var(--border-radius-container)',
+  'border-radius-variety-button': 'var(--border-radius-button)',
+  'border-radius-variety-card': 'var(--border-radius-card)',
+  'border-radius-variety-container': 'var(--border-radius-container)',
+  'border-radius-variety-container-l2': 'var(--border-radius-container-l2)',
+  'border-radius-variety-icon': 'var(--border-radius-icon)',
+  'border-radius-variety-image': 'var(--border-radius-image)',
+  'border-radius-variety-label': 'var(--border-radius-label)',
+  'border-radius-variety-modal': 'var(--border-radius-modal)',
+  'border-radius-variety-none': 'var(--border-radius-none)',
+  'border-radius-variety-pagination-button': 'var(--border-radius-pagination-button)',
+  'border-radius-variety-stat': 'var(--border-radius-stat)',
+  'border-radius-variety-tag': 'var(--border-radius-tag)',
+  'border-radius-variety-text-area': 'var(--border-radius-text-area)',
+  'border-radius-variety-text-input': 'var(--border-radius-text-input)',
+  'border-radius-variety-wrapper-container': 'var(--border-radius-wrapper-container)',
+};

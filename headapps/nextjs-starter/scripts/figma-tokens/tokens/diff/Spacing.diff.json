@@ -1,0 +1,16 @@
+{
+  "VariableID:20750:1447": "layout-variety-margin-x",
+  "VariableID:20750:1469": "columns-variety-one-fourth-min-width",
+  "VariableID:20750:1470": "columns-variety-one-fourth-max-width",
+  "VariableID:20750:1471": "columns-variety-two-third-min-width",
+  "VariableID:20750:1472": "columns-variety-one-third-min-width",
+  "VariableID:20750:1473": "columns-variety-two-third-max-width",
+  "VariableID:20750:1474": "columns-variety-one-third-max-width",
+  "VariableID:20750:1475": "columns-variety-half-min-width",
+  "VariableID:20750:1476": "columns-variety-half-max-width",
+  "VariableID:20750:1477": "columns-variety-full-min-width",
+  "VariableID:20750:1478": "columns-variety-full-max-width",
+  "VariableID:20750:1479": "layout-variety-margin-y",
+  "VariableID:20750:1480": "layout-variety-gutter",
+  "VariableID:20750:1481": "layout-variety-columns"
+}

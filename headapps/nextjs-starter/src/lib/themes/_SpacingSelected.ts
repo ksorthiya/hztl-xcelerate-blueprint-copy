@@ -1,0 +1,17 @@
+/* prettier-ignore */
+export const SpacingSelected = {
+  'columns-variety-full-max-width': 'var(--spacing-columns-full-max-width)',
+  'columns-variety-full-min-width': 'var(--spacing-columns-full-min-width)',
+  'columns-variety-half-max-width': 'var(--spacing-columns-half-max-width)',
+  'columns-variety-half-min-width': 'var(--spacing-columns-half-min-width)',
+  'columns-variety-one-fourth-max-width': 'var(--spacing-columns-one-fourth-max-width)',
+  'columns-variety-one-fourth-min-width': 'var(--spacing-columns-one-fourth-min-width)',
+  'columns-variety-one-third-max-width': 'var(--spacing-columns-one-third-max-width)',
+  'columns-variety-one-third-min-width': 'var(--spacing-columns-one-third-min-width)',
+  'columns-variety-two-third-max-width': 'var(--spacing-columns-two-third-max-width)',
+  'columns-variety-two-third-min-width': 'var(--spacing-columns-two-third-min-width)',
+  'layout-variety-columns': 'var(--spacing-layout-columns)',
+  'layout-variety-gutter': 'var(--spacing-layout-gutter)',
+  'layout-variety-margin-x': 'var(--spacing-layout-margin-x)',
+  'layout-variety-margin-y': 'var(--spacing-layout-margin-y)',
+};
