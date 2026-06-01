@@ -43,7 +43,7 @@ const ArticleContent = (props: ArticleContentProps) => {
     '@context': 'https://schema.org',
     '@type': 'Article',
     ...(fields.heading?.value && { headline: fields.heading.value }),
-    ...(fields.description?.value && { description: fields.description.value }),
+    ...(fields.subHeading?.value && { description: fields.subHeading.value }),
     ...(fields.image?.value?.src && { image: fields.image.value.src }),
     ...(fields.authorName?.value && {
       author: { '@type': 'Person', name: fields.authorName.value },
