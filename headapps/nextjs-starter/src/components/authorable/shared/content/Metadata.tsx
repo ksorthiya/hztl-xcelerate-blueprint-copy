@@ -11,6 +11,7 @@ import { useSitecore } from '@sitecore-content-sdk/nextjs';
 const Metadata = ({
   route,
   parentItem,
+  pageUpdatedDate,
 }: {
   route: (XceleratePage | XcelerateArticleDetailPage) & {
     templateName?: string;
@@ -18,9 +19,31 @@ const Metadata = ({
     itemLanguage?: string;
   };
   parentItem?: GetParentItemQueryResult['item']['parent'];
+  pageUpdatedDate?: string | null;
 }) => {
-  const { siteSettings } = useSitecore().page.layout.sitecore.context;
+  const { siteSettings, itemPath } = useSitecore().page.layout.sitecore.context;
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const isHomePage = itemPath === '/';
+
+  // Organization schema rendered on the home page only.
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'BrandKS',
+    url: 'https://hztl-page-health-checker-demo.vercel.app/',
+    logo: 'https://hztl-page-health-checker-demo.vercel.app/logo.png',
+    description:
+      'At BrandKS, our advisors craft custom financial strategies to match your goals, risk tolerance, and timeline. With over two decades of expertise and a client-first approach, we help you invest smarter, retire better, and grow confidently.',
+    sameAs: [
+      'https://www.linkedin.com/company/brandks',
+      'https://twitter.com/brandks',
+      'https://www.instagram.com/brandks',
+      'https://www.facebook.com/brandks',
+      'https://www.pinterest.com/brandks',
+      'https://www.youtube.com/brandks',
+      'https://www.tiktok.com/brandks',
+    ],
+  };
   const isArticle = route?.templateName === 'Article Detail Page';
   const fields = (route as XceleratePage).fields ?? {};
 
@@ -42,7 +65,22 @@ const Metadata = ({
     TwitterCardType: fields.TwitterCardType,
     canonicalUrl: fields.canonicalUrl,
     robotsMetaTag: fields.robotsMetaTag,
+    publishedDate: fields.publishedDate,
   };
+
+  const toIso = (value: string | null | undefined): string | undefined => {
+    if (!value) return undefined;
+    // Normalize Sitecore compact format: 20260530T174303Z → 2026-05-30T17:43:03Z
+    const normalized = value.replace(
+      /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z?$/,
+      '$1-$2-$3T$4:$5:$6Z'
+    );
+    const d = new Date(normalized);
+    return isNaN(d.getTime()) ? undefined : d.toISOString();
+  };
+
+  const lastUpdatedIso = toIso(metaFields.publishedDate?.value) ?? toIso(pageUpdatedDate);
+
   let articleMetaFields;
   if (isArticle) {
     const articleFields = (route as XcelerateArticleDetailPage).fields ?? {};
@@ -79,6 +117,18 @@ const Metadata = ({
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="robots" content={robotsMetaTagValue} />
       {canonicalUrlValue && <link rel="canonical" href={canonicalUrlValue} />}
+
+      {/* Organization structured data — home page only */}
+      {isHomePage && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      )}
+
+      {/* Page freshness — consumed by AI crawlers to assess content staleness */}
+      {lastUpdatedIso && <meta name="last-modified" content={lastUpdatedIso} />}
+      {lastUpdatedIso && <meta property="article:modified_time" content={lastUpdatedIso} />}
 
       {/* OpenGraph Metadata */}
       {currentUrl && <meta property="og:url" content={currentUrl} />}

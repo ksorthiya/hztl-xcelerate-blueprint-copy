@@ -9,6 +9,8 @@ import Layout from 'src/Layout';
 import NotFound from 'src/NotFound';
 import GetParentItemQuery, {
   GetParentItemQueryResult,
+  GetPageUpdatedQuery,
+  GetPageUpdatedQueryResult,
 } from 'components/authorable/shared/content/Metadata.graphql';
 import graphqlClientFactory from 'lib/graphql-client-factory';
 import Providers from 'src/Providers';
@@ -20,10 +22,12 @@ const SitecorePage = ({
   componentProps,
   mockError,
   parentItem,
+  pageUpdatedDate,
   page,
   headLinks,
 }: CustomSitecorePageProps & {
   parentItem?: GetParentItemQueryResult['item']['parent'];
+  pageUpdatedDate?: string | null;
 }): JSX.Element => {
   useEffect(() => {
     // Since Sitecore editors do not support Fast Refresh, need to refresh editor chromes after Fast Refresh finished
@@ -41,7 +45,12 @@ const SitecorePage = ({
 
   return (
     <Providers componentProps={componentProps} page={page}>
-      <Layout page={page} parentItem={parentItem} headLinks={headLinks} />
+      <Layout
+        page={page}
+        parentItem={parentItem}
+        pageUpdatedDate={pageUpdatedDate}
+        headLinks={headLinks}
+      />
     </Providers>
   );
 };
@@ -96,17 +105,32 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const route = props.page?.layout.sitecore.route;
   let parentItem = null;
-  if (route?.templateName === 'Article Detail Page' && route.itemId) {
-    try {
-      const graphQLClient = graphqlClientFactory({});
-      const result = await graphQLClient.request<GetParentItemQueryResult>(GetParentItemQuery, {
-        itemID: route.itemId,
-        language: route.itemLanguage ?? props.page?.locale ?? '',
-      });
+  let pageUpdatedDate: string | null = null;
 
-      parentItem = result?.item?.parent;
-    } catch (e) {
-      console.error('Error fetching parent item in getStaticProps', e);
+  if (route?.itemId) {
+    const graphQLClient = graphqlClientFactory({});
+    const language = route.itemLanguage ?? props.page?.locale ?? '';
+
+    if (route.templateName === 'Article Detail Page') {
+      try {
+        const result = await graphQLClient.request<GetParentItemQueryResult>(GetParentItemQuery, {
+          itemID: route.itemId,
+          language,
+        });
+        parentItem = result?.item?.parent;
+      } catch (e) {
+        console.error('Error fetching parent item in getStaticProps', e);
+      }
+    } else {
+      try {
+        const result = await graphQLClient.request<GetPageUpdatedQueryResult>(GetPageUpdatedQuery, {
+          itemID: route.itemId,
+          language,
+        });
+        pageUpdatedDate = result?.item?.updated?.value ?? null;
+      } catch (e) {
+        console.error('Error fetching __Updated date in getStaticProps', e);
+      }
     }
   }
 
@@ -119,6 +143,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     props: {
       ...props,
       parentItem,
+      pageUpdatedDate,
     },
     // Next.js will attempt to re-generate the page:
     // - When a request comes in

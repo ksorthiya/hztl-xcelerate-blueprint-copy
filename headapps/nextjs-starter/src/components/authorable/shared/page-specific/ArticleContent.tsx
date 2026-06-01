@@ -23,6 +23,13 @@ type ArticleContentProps = {
   };
 };
 
+const toIsoDate = (sitecoreDate?: string): string | undefined => {
+  if (!sitecoreDate) return undefined;
+  const match = sitecoreDate.match(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})/);
+  if (!match) return undefined;
+  return `${match[1]}-${match[2]}-${match[3]}T${match[4]}:${match[5]}:${match[6]}`;
+};
+
 const ArticleContent = (props: ArticleContentProps) => {
   const category = props.staticProps.parentCategory;
   const articleDetail = props.staticProps.articleDetail;
@@ -31,6 +38,19 @@ const ArticleContent = (props: ArticleContentProps) => {
   const tags = Array.isArray(fields.SxaTags) ? fields.SxaTags : [];
   const stringTagsArray = tags?.map((tag: Tag) => tag?.fields?.Title?.value) || [];
   const { getDictionaryValue } = useDictionary();
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    ...(fields.heading?.value && { headline: fields.heading.value }),
+    ...(fields.description?.value && { description: fields.description.value }),
+    ...(fields.image?.value?.src && { image: fields.image.value.src }),
+    ...(fields.authorName?.value && {
+      author: { '@type': 'Person', name: fields.authorName.value },
+    }),
+    ...(fields.publishedDate?.value && { datePublished: toIsoDate(fields.publishedDate.value) }),
+    ...(stringTagsArray.length > 0 && { keywords: stringTagsArray.join(', ') }),
+  };
 
   const {
     base,
@@ -48,6 +68,10 @@ const ArticleContent = (props: ArticleContentProps) => {
 
   return (
     <div className={base()} {...getTestProps(`component-article-content-${articleDetail?.id}`)}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <div className={imageWithDetailContainer()}>
         {fields.image && (
           <ImageWrapper
