@@ -89,6 +89,23 @@ const Accordion = (props: AccordionProps): JSX.Element => {
     'AccordionItem'
   );
 
+  type AccordionItemWithFields = {
+    fields?: { heading?: { value?: string }; content?: { value?: string } };
+  };
+
+  const faqEntities = (accordionItems as AccordionItemWithFields[])
+    .filter((item) => item.fields?.heading?.value)
+    .map((item) => ({
+      '@type': 'Question',
+      name: item.fields?.heading?.value,
+      acceptedAnswer: { '@type': 'Answer', text: item.fields?.content?.value ?? '' },
+    }));
+
+  const faqSchema =
+    faqEntities.length > 0
+      ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqEntities }
+      : null;
+
   const singlePanelOpen = props.params.singleOpenPanel === '1';
 
   const scrollToOpenPanel = props.params.scrollToOpenPanel === '1';
@@ -104,30 +121,38 @@ const Accordion = (props: AccordionProps): JSX.Element => {
   }
 
   return (
-    <section
-      className={base()}
-      data-component="authorable/shared/lists/accordion"
-      id={RenderingIdentifier}
-      {...getTestProps(`component-accordion-${props?.rendering?.uid}`)}
-    >
-      <SectionWrapper>
-        <AccordionContextProvider
-          panels={accordionItems}
-          singleOpenPanel={singlePanelOpen}
-          scrollToOpenPanel={scrollToOpenPanel}
-          defaultOpenPanels={defaultOpenPanels}
-        >
-          <div className={container()}>
-            <div className={controls()}>{!singlePanelOpen && <AccordionControls />}</div>
-            <PlaceholderWrapper
-              name={phKey}
-              rendering={props.rendering}
-              {...getTestProps(`accordion-ph`)}
-            />
-          </div>
-        </AccordionContextProvider>
-      </SectionWrapper>
-    </section>
+    <>
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+      <section
+        className={base()}
+        data-component="authorable/shared/lists/accordion"
+        id={RenderingIdentifier}
+        {...getTestProps(`component-accordion-${props?.rendering?.uid}`)}
+      >
+        <SectionWrapper>
+          <AccordionContextProvider
+            panels={accordionItems}
+            singleOpenPanel={singlePanelOpen}
+            scrollToOpenPanel={scrollToOpenPanel}
+            defaultOpenPanels={defaultOpenPanels}
+          >
+            <div className={container()}>
+              <div className={controls()}>{!singlePanelOpen && <AccordionControls />}</div>
+              <PlaceholderWrapper
+                name={phKey}
+                rendering={props.rendering}
+                {...getTestProps(`accordion-ph`)}
+              />
+            </div>
+          </AccordionContextProvider>
+        </SectionWrapper>
+      </section>
+    </>
   );
 };
 

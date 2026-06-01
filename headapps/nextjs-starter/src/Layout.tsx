@@ -43,10 +43,11 @@ const TAILWIND_VARIANTS = tv({
 interface LayoutProps {
   page: Page;
   parentItem?: GetParentItemQueryResult['item']['parent'];
+  pageUpdatedDate?: string | null;
   headLinks?: InlinedHtmlLink[];
 }
 
-const Layout = ({ page, parentItem, headLinks }: LayoutProps): JSX.Element => {
+const Layout = ({ page, parentItem, pageUpdatedDate, headLinks }: LayoutProps): JSX.Element => {
   const { layout, mode } = page;
   const { route } = layout.sitecore;
   const mainClassPageEditing = mode.isEditing ? 'editing-mode' : 'prod-mode';
@@ -89,7 +90,9 @@ const Layout = ({ page, parentItem, headLinks }: LayoutProps): JSX.Element => {
       <Scripts />
       <SitecoreStyles headLinks={headLinks} />
       {!disableSpeedInsights && <SpeedInsights />}
-      {route && <Metadata route={route} parentItem={parentItem} />}
+      {route && (
+        <Metadata route={route} parentItem={parentItem} pageUpdatedDate={pageUpdatedDate} />
+      )}
       <SitecoreSearchWidgetsProviderWrapper>
         <BrandAndThemeProvider brand={brand} applyToBody>
           <div className={mainClassPageEditing}>

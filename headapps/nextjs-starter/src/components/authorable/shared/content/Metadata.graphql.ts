@@ -7,7 +7,7 @@ const GetParentItemQuery = /** GQL */ `
             ... on TextField {
                 value
             }
-        }        
+        }
       }
     }
   }
@@ -20,6 +20,26 @@ export type GetParentItemQueryResult = {
     parent?: {
       id: string;
       categoryName: { value: string };
+    };
+  };
+};
+
+export const GetPageUpdatedQuery = /** GQL */ `
+  query GetPageUpdatedQuery($itemID: String!, $language: String!) {
+    item(path: $itemID, language: $language) {
+      updated: field(name: "__Updated") {
+        ... on DateField {
+          value
+        }
+      }
+    }
+  }
+`;
+
+export type GetPageUpdatedQueryResult = {
+  item?: {
+    updated?: {
+      value?: string;
     };
   };
 };

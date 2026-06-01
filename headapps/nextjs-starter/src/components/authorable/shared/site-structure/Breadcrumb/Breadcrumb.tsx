@@ -45,62 +45,90 @@ export const Default = (staticProps: BreadcrumbDataType): JSX.Element => {
 
   const { base, icon, linkWrapper, list, listItem, lastLevelText } = TAILWIND_VARIANTS();
 
-  return (
-    <nav
-      aria-label="Breadcrumb"
-      className={base()}
-      data-component="authorable/shared/site-structure/breadcrumb"
-      {...getTestProps(`component-breadcrumb`)}
-    >
-      <ul className={list()}>
-        {filteredAncestors.map((ancestor, index) => {
-          const { url, Title } = ancestor || {};
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      ...(filteredAncestors?.map((ancestor, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: ancestor?.Title?.jsonValue?.value,
+        item: ancestor?.url?.path,
+      })) ?? []),
+      ...(ancestors?.length > 0
+        ? [
+            {
+              '@type': 'ListItem',
+              position: (filteredAncestors?.length ?? 0) + 1,
+              name: Title?.jsonValue?.value,
+            },
+          ]
+        : []),
+    ],
+  };
 
-          return (
-            <li className={listItem()} key={url?.path} {...getTestProps(`parent-page-${index}`)}>
-              <LinkWrapper
-                ctaVariant="custom"
-                className={linkWrapper()}
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <nav
+        aria-label="Breadcrumb"
+        className={base()}
+        data-component="authorable/shared/site-structure/breadcrumb"
+        {...getTestProps(`component-breadcrumb`)}
+      >
+        <ul className={list()}>
+          {filteredAncestors.map((ancestor, index) => {
+            const { url, Title } = ancestor || {};
+
+            return (
+              <li className={listItem()} key={url?.path} {...getTestProps(`parent-page-${index}`)}>
+                <LinkWrapper
+                  ctaVariant="custom"
+                  className={linkWrapper()}
+                  field={{
+                    value: {
+                      href: url?.path,
+                      text: Title?.jsonValue?.value,
+                      title: Title?.jsonValue?.value,
+                    },
+                  }}
+                  gtmEvent={{
+                    event: 'link',
+                    type: 'breadcrumb',
+                    'gtm.element.dataset.gtmDatasourceId': dataSource,
+                    'gtm.element.dataset.gtmComponentName': componentName,
+                  }}
+                  {...getTestProps(`link-${index}`)}
+                />
+                <SvgIcon
+                  className={icon()}
+                  fill="none"
+                  icon="chevron-right"
+                  size="xs"
+                  viewBox="0 0 16 16"
+                />
+              </li>
+            );
+          })}
+          {ancestors?.length > 0 && (
+            <li aria-current="true" {...getTestProps(`current-page`)}>
+              <Text
+                className={lastLevelText()}
+                encode={false}
                 field={{
-                  value: {
-                    href: url?.path,
-                    text: Title?.jsonValue?.value,
-                    title: Title?.jsonValue?.value,
-                  },
+                  value: Title?.jsonValue?.value,
                 }}
-                gtmEvent={{
-                  event: 'link',
-                  type: 'breadcrumb',
-                  'gtm.element.dataset.gtmDatasourceId': dataSource,
-                  'gtm.element.dataset.gtmComponentName': componentName,
-                }}
-                {...getTestProps(`link-${index}`)}
-              />
-              <SvgIcon
-                className={icon()}
-                fill="none"
-                icon="chevron-right"
-                size="xs"
-                viewBox="0 0 16 16"
+                tag="span"
+                {...getTestProps(`current-page-text`)}
               />
             </li>
-          );
-        })}
-        {ancestors?.length > 0 && (
-          <li aria-current="true" {...getTestProps(`current-page`)}>
-            <Text
-              className={lastLevelText()}
-              encode={false}
-              field={{
-                value: Title?.jsonValue?.value,
-              }}
-              tag="span"
-              {...getTestProps(`current-page-text`)}
-            />
-          </li>
-        )}
-      </ul>
-    </nav>
+          )}
+        </ul>
+      </nav>
+    </>
   );
 };
 
