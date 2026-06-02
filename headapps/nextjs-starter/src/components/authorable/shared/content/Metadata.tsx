@@ -79,7 +79,7 @@ const Metadata = ({
     return isNaN(d.getTime()) ? undefined : d.toISOString();
   };
 
-  const lastUpdatedIso = toIso(metaFields.publishedDate?.value) ?? toIso(pageUpdatedDate);
+  const lastUpdatedIso = toIso(pageUpdatedDate);
 
   let articleMetaFields;
   if (isArticle) {
