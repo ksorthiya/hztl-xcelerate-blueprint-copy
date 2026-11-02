@@ -17,11 +17,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     req.headers['x-original-path'] ||
     req.headers['x-rewrite-path'];
   // Determine raw path in priority order: header, internal matched-path header, query, then fallback
-  let pathRaw = pathFromHeader || pathFromMatchedHeader || pathFromQuery || '/';
+  const pathRaw = pathFromHeader || pathFromMatchedHeader || pathFromQuery || '/';
   // Handle placeholder values like ":path*" that can appear from Next.js rewrite configs
   let path;
   if (typeof pathRaw === 'string') {
-    path = (pathRaw === '' || pathRaw.includes(':path')) ? '/' : pathRaw;
+    path = pathRaw === '' || pathRaw.includes(':path') ? '/' : pathRaw;
   } else {
     path = pathRaw[0] || '/';
   }
@@ -39,14 +39,17 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (!baseUrl) {
     const host = req.headers.host;
     if (host) {
-      const protocol = req.headers['x-forwarded-proto'] || (process.env.VERCEL_URL ? 'https' : 'http');
+      const protocol =
+        req.headers['x-forwarded-proto'] || (process.env.VERCEL_URL ? 'https' : 'http');
       baseUrl = protocol + '://' + host;
     } else {
       const originOrReferer = (req.headers.origin || req.headers.referer || '').replace(/\/?$/, '');
       if (originOrReferer) {
         baseUrl = originOrReferer;
       } else if (process.env.VERCEL_URL) {
-        baseUrl = process.env.VERCEL_URL.startsWith('http') ? process.env.VERCEL_URL : 'https://' + process.env.VERCEL_URL;
+        baseUrl = process.env.VERCEL_URL.startsWith('http')
+          ? process.env.VERCEL_URL
+          : 'https://' + process.env.VERCEL_URL;
       } else {
         baseUrl = 'http://localhost:' + (process.env.PORT || 3000);
       }
