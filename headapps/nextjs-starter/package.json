@@ -79,7 +79,8 @@
     "tailwind-variants": "^0.2.1",
     "tsx": "^4.19.2",
     "video.js": "^8.16.1",
-    "videojs-youtube": "^3.0.1"
+    "videojs-youtube": "^3.0.1",
+    "accept-md-runtime": "5.0.2"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",

@@ -69,8 +69,17 @@ const nextConfig = {
   poweredByHeader: false,
 
   async rewrites() {
+    // accept-md: requests that ask for text/markdown get the page as Markdown.
+    // `npx accept-md init` (5.0.2) can't edit this method-style rewrites(), so
+    // it's added by hand: its rule in beforeFiles, Sitecore's rules in afterFiles
+    // (where a plain array goes).
+    const acceptMd = {
+      source: '/:path*',
+      destination: '/api/accept-md?path=:path*',
+      has: [{ type: 'header', key: 'accept', value: '(.*)text/markdown(.*)' }],
+    };
     // When in connected mode we want to proxy Sitecore paths off to Sitecore
-    return [
+    const sitecore = [
       // API endpoints
       {
         source: '/sitecore/api/:path*',
@@ -92,6 +101,7 @@ const nextConfig = {
         destination: `${process.env.SITECORE_API_HOST}/sitecore/service/:path*`,
       },
     ];
+    return { beforeFiles: [acceptMd], afterFiles: sitecore, fallback: [] };
   },
   webpack: (config, options) => {
     if (!options.isServer) {
