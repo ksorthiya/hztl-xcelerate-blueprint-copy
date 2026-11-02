@@ -69,17 +69,8 @@ const nextConfig = {
   poweredByHeader: false,
 
   async rewrites() {
-    // accept-md: requests that ask for text/markdown get the page as Markdown.
-    // `npx accept-md init` (5.0.2) can't edit this method-style rewrites(), so
-    // it's added by hand: its rule in beforeFiles, Sitecore's rules in afterFiles
-    // (where a plain array goes).
-    const acceptMd = {
-      source: '/:path*',
-      destination: '/api/accept-md?path=:path*',
-      has: [{ type: 'header', key: 'accept', value: '(.*)text/markdown(.*)' }],
-    };
     // When in connected mode we want to proxy Sitecore paths off to Sitecore
-    const sitecore = [
+    return [
       // API endpoints
       {
         source: '/sitecore/api/:path*',
@@ -101,7 +92,6 @@ const nextConfig = {
         destination: `${process.env.SITECORE_API_HOST}/sitecore/service/:path*`,
       },
     ];
-    return { beforeFiles: [acceptMd], afterFiles: sitecore, fallback: [] };
   },
   webpack: (config, options) => {
     if (!options.isServer) {
@@ -128,9 +118,34 @@ const nextConfig = {
   },
 };
 
+// accept-md: requests that ask for text/markdown get the page as Markdown
+// (src/pages/api/accept-md). Added after the plugins, because feaas, robots and
+// sitemap spread rewrites() as an array: the rule goes in beforeFiles, and the
+// array (Sitecore's and the plugins' rewrites) stays afterFiles, as before.
+// `npx accept-md init` can't edit this config, so this is by hand.
+const acceptMdRewrite = {
+  source: '/:path*',
+  destination: '/api/accept-md?path=:path*',
+  has: [{ type: 'header', key: 'accept', value: '(.*)text/markdown(.*)' }],
+};
+
+function withAcceptMd(config) {
+  const base = config.rewrites;
+  return {
+    ...config,
+    async rewrites() {
+      const rewrites = base ? await base() : [];
+      if (Array.isArray(rewrites)) {
+        return { beforeFiles: [acceptMdRewrite], afterFiles: rewrites, fallback: [] };
+      }
+      return { ...rewrites, beforeFiles: [acceptMdRewrite, ...(rewrites.beforeFiles ?? [])] };
+    },
+  };
+}
+
 module.exports = () => {
   // Run the base config through any configured plugins
   const finalNextConfig = Object.values(plugins).reduce((acc, plugin) => plugin(acc), nextConfig);
   // console.log('finalNextConfig', JSON.stringify(finalNextConfig, null, 2));
-  return finalNextConfig;
+  return withAcceptMd(finalNextConfig);
 };
