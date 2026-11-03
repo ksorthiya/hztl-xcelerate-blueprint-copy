@@ -16,8 +16,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     req.headers['x-vercel-original-path'] ||
     req.headers['x-original-path'] ||
     req.headers['x-rewrite-path'];
-  // Determine raw path in priority order: header, internal matched-path header, query, then fallback
-  const pathRaw = pathFromHeader || pathFromMatchedHeader || pathFromQuery || '/';
+  // Determine raw path in priority order: header, query, internal matched-path header, then fallback.
+  // The rewrite's ?path= comes before the matched-path headers: on Vercel, x-matched-path names
+  // this route (/api/accept-md), not the page, so every request was refused as an /api/ path.
+  // It's '' for the home page, so it wins whenever it's present.
+  const pathRaw =
+    pathFromHeader || (pathFromQuery !== undefined ? pathFromQuery : pathFromMatchedHeader) || '/';
   // Handle placeholder values like ":path*" that can appear from Next.js rewrite configs
   let path;
   if (typeof pathRaw === 'string') {
